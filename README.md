@@ -1,6 +1,7 @@
 # CourseScheduler - FrontEnd
 <h2 align="center">
    Course Scheduler Web
+   <a href="https://course-scheduler-frontend-cztvf3pz6-rifqifarhansyah.vercel.app/" target="_blank">Course Scheduler Web</a>
 </h2>
 <hr>
 
@@ -67,6 +68,7 @@ Sebuah aplikasi berbasis website sederhana yang dapat digunakan untuk melakukan 
     docker compose up
     ```
 5. Program frontend akan otomatis dijalankan pada localhost `(default PORT:3000)`
+6. Atau dengan cara lain yaitu membuka pranala berikut [ini](https://course-scheduler-frontend-cztvf3pz6-rifqifarhansyah.vercel.app/)
 
 <a name="usage"></a>
 
