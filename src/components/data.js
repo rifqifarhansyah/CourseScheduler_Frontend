@@ -9,7 +9,7 @@ const DataPage = () => {
     const toast = useToast(); // Instantiate the toast hook
   
     useEffect(() => {
-      fetch('http://localhost:5001/api/getAllCourses')
+      fetch('https://courseschedulerbackend-production.up.railway.app/api/getAllCourses')
         .then((response) => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -24,7 +24,7 @@ const DataPage = () => {
     }, []);
   
     const handleRemove = (id) => {
-      fetch(`http://localhost:5001/api/removeCourses/${id}`, {
+      fetch(`https://courseschedulerbackend-production.up.railway.app/api/removeCourses/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const DataPage = () => {
         .then((data) => {
           console.log('Data removed successfully:', data);
           // Refresh the data after removal
-          fetch('http://localhost:5001/api/getAllCourses')
+          fetch('https://courseschedulerbackend-production.up.railway.app/api/getAllCourses')
             .then((response) => response.json())
             .then((data) => {
               setData(data);

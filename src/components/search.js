@@ -82,7 +82,7 @@ function SearchPage() {
   
     try {
       // Construct the API URL with the search parameters
-      const apiUrl = `http://localhost:5001/api/searchCourses/${department}/${faculty}/${currentSemester}/${minSKS}/${maxSKS}`;
+      const apiUrl = `https://courseschedulerbackend-production.up.railway.app/api/searchCourses/${department}/${faculty}/${currentSemester}/${minSKS}/${maxSKS}`;
   
       // Make an API call to the backend to search for courses using the GET method
       const response = await fetch(apiUrl, {

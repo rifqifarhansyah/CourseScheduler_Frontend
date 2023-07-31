@@ -46,7 +46,7 @@ const AddMkPage = () => {
         };
     
         // Make a POST request to your backend API
-        fetch('http://localhost:5001/api/addCourses', {
+        fetch('https://courseschedulerbackend-production.up.railway.app/api/addCourses', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ const AddMkPage = () => {
     const formData = new FormData();
     formData.append('file', selectedFile);
   
-    fetch('http://localhost:5001/api/addDataJson', {
+    fetch('https://courseschedulerbackend-production.up.railway.app/api/addDataJson', {
       method: 'POST',
       headers: {
         // Remove the 'Content-Type' header as it is automatically set for FormData
