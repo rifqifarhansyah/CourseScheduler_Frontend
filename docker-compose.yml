@@ -1,0 +1,15 @@
+version: '3'
+services:
+  frontend:
+    # Build the image using the current directory which contains the Dockerfile
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Mount the application code as a volume to enable live-reloading during development
+    volumes:
+      - .:/app
+      # Add this line to avoid issues with file changes ownership inside the container
+      - /app/node_modules
+    # Expose the port to access the frontend application
+    ports:
+      - "3000:3000"
