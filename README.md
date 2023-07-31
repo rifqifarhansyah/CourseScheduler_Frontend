@@ -1,6 +1,5 @@
 # CourseScheduler - FrontEnd
 <h2 align="center">
-   Course Scheduler Web
    <a href="https://course-scheduler-frontend-cztvf3pz6-rifqifarhansyah.vercel.app/" target="_blank">Course Scheduler Web</a>
 </h2>
 <hr>
