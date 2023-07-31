@@ -66,7 +66,7 @@ Sebuah aplikasi berbasis website sederhana yang dapat digunakan untuk melakukan 
     ```sh
     docker compose up
     ```
-5. Program backend akan otomatis dijalankan pada localhost `(default PORT:3000)`
+5. Program frontend akan otomatis dijalankan pada localhost `(default PORT:3000)`
 
 <a name="usage"></a>
 
