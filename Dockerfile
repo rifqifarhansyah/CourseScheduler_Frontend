@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy the package.json and package-lock.json files to the container
 COPY package*.json ./
 
+# Install the required dependencies
+RUN npm install
+
 # Copy the entire frontend application to the container
 COPY . .
 
